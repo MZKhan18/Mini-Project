@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homePageStyle.css">
+    <script src="homePage.js"></script>
+    <title>HomePage Library</title>
+</head>
+<script>
+    function closeTab(){
+        if(confirm("Do you want to log out")){
+            location.assign("loginPage.html");
+        }
+    }
+</script>
+<body>
+    <div class="heading">
+        <!-- <h1>Shri Shankaracharya Tecnical Campus</h1>
+        <h1>Library</h1> -->
+        <img src="sstcLogo.png" alt="">
+    </div>
+    <div class="book">
+        <img src="bookbg4.png" alt="">
+    </div>
+    <div class="pg1">
+        <img src="bookpg1.png" alt="">
+    </div>
+    <div class="pg2">
+        <img src="bookpg1.png" alt="">
+    </div>
+    <div class="pg3">
+        <img src="bookpg1.png" alt="">
+    </div>
+    <div class="pg4">
+        <img src="bookpg1.png" alt="">
+    </div>
+    <div class="text1" onclick="showrecord()">
+        <i>Show Record</i>
+    </div>
+    <div class="text2" onclick="newentry()">
+        <i>New Entry</i>
+    </div>
+    <div class="text3" onclick="booklist()">
+        <i>Book List</i>
+    </div>
+    <div class="text4" onclick="closeTab()">
+        <i>Log Out</i>
+    </div>
+    <div class="qoute">
+        <p><i>“A reader lives a thousand lives before he dies . . . The man who never reads lives only one.”<p class="test1">- George R.R. Martin</p></i></p>
+    </div>
+    
+</body>
+
+</html>

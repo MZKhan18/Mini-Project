@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-size: cover;
+    background-color: antiquewhite;
+}
+.heading{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(68, 5, 5);
+    text-align: center;
+}
+.book{
+    position: absolute;
+    left: 422px;
+    top: 138px;
+    text-align: center;
+}
+.pg1{
+    position: absolute;
+    left: 652px;
+    top: 178px;
+    text-align: center;
+}
+.text1{
+    position: absolute;
+    left: 680px;
+    top: 238px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    font-weight: 400;;
+}
+.text2{
+    position: absolute;
+    left: 1100px;
+    top: 238px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    font-weight: 400;;
+}
+.text3{
+    position: absolute;
+    left: 710px;
+    top: 548px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    font-weight: 400;;
+}
+.text4{
+    position: absolute;
+    left: 1120px;
+    top: 548px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+    font-weight: 400;;
+}
+.pg2{
+    position: absolute;
+    left: 1052px;
+    top: 178px;
+    text-align: center;
+}
+.pg3{
+    position: absolute;
+    left: 652px;
+    top: 478px;
+    text-align: center;
+}
+.pg4{
+    position: absolute;
+    left: 1052px;
+    top: 478px;
+    text-align: center;
+}
+.text1:hover{
+    color: rgb(229, 255, 0);
+    cursor: pointer;
+}
+.text2:hover{
+    color: rgb(229, 255, 0);
+    cursor: pointer;
+}
+.text3:hover{
+    color: rgb(229, 255, 0);
+    cursor: pointer;
+}
+.text4:hover{
+    color: rgb(229, 255, 0);
+    cursor: pointer;
+}
+.qoute{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    width: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 34px;
+    line-height: 50px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(121, 30, 30);
+}
+.test1{
+    font-size: 30px;
+    text-align: right;
+}

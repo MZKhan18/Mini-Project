@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-size: cover;
+    background-color: antiquewhite;
+}
+.heading{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(68, 5, 5);
+    text-align: center;
+    color: aliceblue;
+}
+.subHeading{
+    position: absolute;
+    width: 100%;
+    top: 110px;
+    font-size: 20px;
+    background-color:antiquewhite;
+    text-align: center;
+    color:rgb(36, 1, 1);
+}
+.content{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 900px;
+    font-size: 20px;
+    padding: 5px;
+    border: 2px solid rgb(116, 13, 13);
+    background-color: rgb(248, 198, 148);
+}
+.qoute{
+    position: absolute;
+    top: 200px;
+    left: 1100px;
+    width: 300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 50px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(121, 30, 30);
+}
+.test1{
+    text-align: right;
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+select{    
+    
+    width: 70%;
+   padding: 8px;
+   border: 2px solid black;
+}
+.submit{
+    text-align: center;
+    color: white;
+    width: 47%;
+    /* padding: 8px; */
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: capitalize;
+    background-color: rgb(175, 66, 47);
+}
+.clear{
+    text-align: center;
+    color: white;
+    position:absolute;
+    top: 481px;
+    left: 470px;
+    width: 45%;
+    /* padding: 8px; */
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: capitalize;
+    background-color: rgb(175, 66, 47);
+}
+.clear:hover{
+    background-color:rgb(116, 23, 23);
+    cursor: pointer;
+}
+.submit:hover{
+    background-color:rgb(116, 23, 23);
+    cursor: pointer;
+}

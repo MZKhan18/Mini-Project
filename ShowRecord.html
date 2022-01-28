@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowRecord Library</title>
+    <link rel="stylesheet" href="showRecord.css">
+</head>
+
+<body>
+    <div class="heading">
+        <img src="sstcLogo.png" alt="">
+    </div>
+    <div class="subHeading">
+        <h1> <u> Student Records</u></h1>
+    </div>
+    <div class="table">
+        <table class="col-xs-7 table-bordered table-striped table-condensed table-fixed" id="student_table">
+            <thead>
+                <tr>
+                    <td style="color: rgb(109, 9, 9);" class="serial">
+                        <b>Sr No.</b>
+                    </td>
+                    <td  style="color: rgb(109, 9, 9);" class="bookName">
+                        <b>Student Name</b>
+                    </td>
+                    <td style="color: rgb(109, 9, 9);" class="bookId">
+                        <b>Section</b>
+                    </td>
+                    <td style="color: rgb(109, 9, 9);" class="bookId">
+                        <b>Branch</b>
+                    </td>
+                    <td style="color: rgb(109, 9, 9);" class="bookId">
+                        <b>Semester</b>
+                    </td>
+                    <td style="color: rgb(109, 9, 9);" class="bookId">
+                        <b>Book ID</b>
+                    </td>
+                    <td style="color: rgb(109, 9, 9);" class="authorName">
+                        <b>Date Of Issue</b>
+                    </td>
+                    <td style="color: rgb(109, 9, 9);" class="edition">
+                        <b>Date of Returning</b>
+                    </td>
+                </tr>
+            </thead>
+            <tbody class="tableBody">
+                <tr>
+                    <td class="serial">1</td>
+                    <td class="bookName">Rahul Verma</td>
+                    <td class="bookName">B2</td>
+                    <td class="bookName">CSE</td>
+                    <td class="bookName">3</td>
+                    <td class="bookId">1100</td>
+                    <td class="authorName">02/12/2021</td>
+                    <td class="edition">10/12/2021</td>
+                </tr>
+                <tr>
+                    <td class="serial">2</td>
+                    <td class="bookName">Akash Verma</td>
+                    <td class="bookName">B2</td>
+                    <td class="bookName">CSE</td>
+                    <td class="bookName">3</td>
+                    <td class="bookId">3570</td>
+                    <td class="authorName">01/12/2021</td>
+                    <td class="edition">6/12/2021</td>
+                </tr>
+                <tr>
+                    <td class="serial">3</td>
+                    <td class="bookName">Abhinav Singh</td>
+                    <td class="bookName">B2</td>
+                    <td class="bookName">CSE</td>
+                    <td class="bookName">3</td>
+                    <td class="bookId">3104</td>
+                    <td class="authorName">02/11/2021</td>
+                    <td class="edition">20/11/2021</td>
+                </tr>
+                <tr>
+                    <td class="serial">4</td>
+                    <td class="bookName">Yash Yadav</td>
+                    <td class="bookName">D1</td>
+                    <td class="bookName">CSE (GT)</td>
+                    <td class="bookName">1</td>
+                    <td class="bookId">1120</td>
+                    <td class="authorName">08/12/2021</td>
+                    <td class="edition">-</td>
+                </tr>
+                <tr>
+                    <td class="serial">5</td>
+                    <td class="bookName">Ayush Jaiswal</td>
+                    <td class="bookName">A2</td>
+                    <td class="bookName">Civil</td>
+                    <td class="bookName">3</td>
+                    <td class="bookId">8801</td>
+                    <td class="authorName">16/11/2021</td>
+                    <td class="edition">2/12/2021</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $('#search').keyup(function(){
+            search_table($(this).val);
+        });
+        function search_table(value){
+            $('#student_table tr').each(function(){
+                var found = 'false';
+                $(this).each(function(){
+                    if($(this).text().toLocaleLowerCase().indexOf(value.toLocaleLowerCase()) >= 0)
+                    {
+                        found = 'true';
+                    }
+                });
+                if(found == 'true')
+                {
+                    $(this).show();
+                }
+                else{
+                    $(this).hide();
+                }
+            });
+        }
+    });
+</script>

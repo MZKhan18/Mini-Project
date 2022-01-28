@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-size: cover;
+    background-color: antiquewhite;
+}
+.heading{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(68, 5, 5);
+    text-align: center;
+    color: aliceblue;
+}
+.subHeading{
+    position: absolute;
+    width: 100%;
+    top: 120px;
+    font-size: 20px;
+    background-color:antiquewhite;
+    text-align: center;
+    color:rgb(36, 1, 1);
+}
+.table{
+    position: absolute;
+    width: 100%;
+    top: 240px;
+    left: 16px;
+    /* background-color:antiquewhite; */
+    text-align: center;
+    color:black;
+}
+table,tr,th,td{
+    font-size: 20px;
+    width: 1500px;
+    border: 2px solid rgb(114, 11, 11);
+    border-collapse: collapse;
+    padding: 5px;
+    color: rgb(7, 7, 7);
+}
